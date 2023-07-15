@@ -1,15 +1,11 @@
-from PySide2 import QtWidgets
-from PySide2.QtWidgets import QListWidget
+
 from todoUI import Ui_MainWindow
 import sys
 from PySide2 import QtCore, QtGui, QtWidgets
-from PySide2.QtCore import Qt
-from PySide2.QtGui import *
 import json
 import os
 filename = 'task.json'
 
-# task = {"date":[]}
 
 task = {"data":[]}
 isFile = os.path.isfile(filename)
@@ -17,10 +13,6 @@ if (not isFile):
     with open(filename, "w") as file:
         json.dump(task,file)
 
-
-
-# with open(filename, 'w') as fp:
-#     json.dump(task, fp, indent=4)
 class MainWindow(QtWidgets.QMainWindow, Ui_MainWindow):
     def __init__(self):
         super(MainWindow, self).__init__()
