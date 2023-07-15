@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>438</width>
+    <height>631</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <property name="tabShape">
+   <enum>QTabWidget::Rounded</enum>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">QWidget {
+  background-color: #fff;
+}
+QListWidget{
+	
+	font: 75 14pt &quot;Verdana&quot;;
+
+}
+QListWidget::item:selected{
+	
+	background-color: rgba(62, 123, 185, 180);
+	border-radius: 8px;
+}
+
+QLineEdit {
+  border-radius: 8px;
+  border: 1px solid #e0e4e7;
+  padding: 5px 15px;
+}
+QLineEdit {
+  border-radius: 8px;
+  border: 1px solid #e0e4e7;
+  padding: 5px 15px;
+}
+QLineEdit::placeholder {
+  color: #767e89;
+}
+
+
+
+QPushButton {
+	font: 87 8pt &quot;Arial Black&quot;;
+  background-color: #0d6efd;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 8px;
+  border: 1px solid #0d6efd;
+  padding: 15px 15px;
+  margin-top: 2px;
+  outline: 0px;
+}
+
+</string>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="leftMargin">
+     <number>15</number>
+    </property>
+    <property name="topMargin">
+     <number>15</number>
+    </property>
+    <property name="rightMargin">
+     <number>15</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <item row="0" column="0">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <property name="spacing">
+       <number>12</number>
+      </property>
+      <item>
+       <widget class="QListWidget" name="listWidget">
+        <property name="frameShape">
+         <enum>QFrame::NoFrame</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <item>
+         <property name="text">
+          <string>fsdf</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="newtaskedit">
+        <property name="placeholderText">
+         <string>New Task</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QPushButton" name="add_btn">
+          <property name="text">
+           <string>Add Task</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="del_btn">
+          <property name="text">
+           <string>Delete</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
